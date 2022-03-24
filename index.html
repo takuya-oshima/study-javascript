@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>JavaScript</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://kit.fontawesome.com/12172c742f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrap">
+  <header class="container p-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="mr-auto">JavaScript</h2>
+      <div class="menu-btn" id="js-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="js-menu">
+        <ul>
+          <li class="parent-menu"><a href="">メニュー1</a>
+            <ul class="child-menu">
+              <li><a href="">小メニュー</a></li>
+              <li><a href="">小メニュー</a></li>
+              <li><a href="">小メニュー</a></li>
+            </ul>
+          </li>
+          <li class="parent-menu"><a href="">メニュー2</a>
+            <ul class="child-menu">
+              <li><a href="">小メニュー</a></li>
+              <li><a href="">小メニュー</a></li>
+              <li><a href="">小メニュー</a></li>
+            </ul>
+          </li>
+          <li><a href="">メニュー3</a></li>
+          <li><a href="">メニュー4</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="container p-5" id="dropmenu">
+    <h2 class="mb-4 fw-bold">ドロップダウンメニュー</h2>
+    <ul class="nav drop-nav">
+      <li class="nav-item parent-menu">
+        <a class="nav-link" href="#">メニュー1</a>
+        <ul class="child-menu">
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+        </ul>
+      </li>
+      <li class="nav-item parent-menu">
+        <a class="nav-link" href="#">メニュー2</a>
+        <ul class="child-menu">
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+        </ul>
+      </li>
+      <li class="nav-item parent-menu">
+        <a class="nav-link" href="#">メニュー3</a>
+        <ul class="child-menu">
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+          <li><a href="">小メニュー</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container p-5" id="tabswitch">
+    <h2 class="mb-4 fw-bold">タブ切り替え</h2>
+    <ul class="nav nav-pills mb-2">
+      <li class="nav-item">
+        <span class="nav-link js-tab active">タブ1</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link js-tab">タブ2</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link js-tab">タブ3</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link js-tab">タブ4</span>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane show">タブ1タブ1タブ1タブ1タブ1タブ1タブ1</div>
+      <div class="tab-pane">タブ2タブ2タブ2タブ2タブ2タブ2タブ2</div>
+      <div class="tab-pane">タブ3タブ3タブ3タブ3タブ3タブ3タブ3</div>
+      <div class="tab-pane">タブ4タブ4タブ4タブ4タブ4タブ4タブ4</div>
+    </div>
+  </section>
+
+  <section class="container p-5" id="accordion">
+    <h2 class="mb-4 fw-bold">アコーディオン</h2>
+    <div class="card">
+      <div class="card-header js-accordion-title">アコーディオン1</div>
+      <div class="card-body js-accordion-body">
+        <h5 class="card-title">アコーディオンの中身</h5>
+        <p class="card-text">アコーディオンの中身アコーディオンの中身アコーディオンの中身アコーディオンの中身 </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header js-accordion-title">アコーディオン2</div>
+      <div class="card-body js-accordion-body">
+        <h5 class="card-title">アコーディオンの中身</h5>
+        <p class="card-text">アコーディオンの中身アコーディオンの中身アコーディオンの中身アコーディオンの中身 </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header js-accordion-title">アコーディオン3</div>
+      <div class="card-body js-accordion-body">
+        <h5 class="card-title">アコーディオンの中身</h5>
+        <p class="card-text">アコーディオンの中身アコーディオンの中身アコーディオンの中身アコーディオンの中身 </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container p-5" id="accordion">
+    <h2 class="mb-4 fw-bold">モーダル</h2>
+    <button type="button" class="btn btn-primary" id="js-modal-open">モーダルオープン</button>
+
+    <div class="modal" id="js-modal-content">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" id="js-modal-close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container p-5">
+    <form>
+      <div class="mb-5">
+        <h2 class="mb-4 fw-bold">セレクトボックスに応じてフォームを表示・非表示</h2>
+        <select class="form-select" id="js-select">
+          <option value="select-hide" selected>フォームを非表示</option>
+          <option value="select-show">フォームを表示</option>
+        </select>
+        <input type="text" class="form-control mt-2" id="js-select-show-input" placeholder="フォームが表示される">
+      </div>
+
+      <div class="mb-5">
+        <h2 class="mb-4 fw-bold">ラジオボタンに応じてフォームを表示・非表示</h2>
+        <div class="form-check">
+          <input class="form-check-input js-radio" type="radio" name="radio" id="radio-hide" onclick="radioSwitch()" checked>
+          <label class="form-check-label" for="radio-hide">フォームを非表示</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input js-radio" type="radio" name="radio" id="radio-show" onclick="radioSwitch()">
+          <label class="form-check-label" for="radio-show">フォームを表示</label>
+        </div>
+        <input type="text" class="form-control mt-2" id="js-radio-show-input" placeholder="フォームが表示される">
+      </div>
+
+      <div class="mb-5">
+        <h2 class="mb-4 fw-bold">単純入力判定</h2>
+        <input type="text" class="form-control" id="js-form-input-check" onblur="inputJudgment();">
+        <p class="form-error" id="form-error-input-judgment">入力されていません</p>
+      </div>
+
+      <div class="mb-5">
+        <h2 class="mb-4 fw-bold">全角半角制御</h2>
+        <input type="text" class="form-control" id="js-form-zenkaku-check">
+      </div>
+
+      <div class="mb-2">
+        <h2 class="mb-4 fw-bold">メールアドレス一致判定</h2>
+        <input type="email" class="form-control" id="js-form-email" placeholder="メールアドレス">
+      </div>
+      <div class="mb-5">
+        <input type="email" class="form-control" id="js-form-email-confilm" placeholder="メールアドレス確認">
+        <p class="form-error" id="form-error-email-judgment">メールアドレスが一致しません。</p>
+      </div>
+
+      <div class="mb-5">
+        <h2 class="mb-4 fw-bold">電話番号ハイフン自動削除</h2>
+        <input type="tel" class="form-control" id="js-form-tel">
+      </div>
+
+      <div class="mb-5">
+        <div class="mb-3">
+          <h2 class="mb-4 fw-bold">画像をサムネイル表示</h2>
+          <input class="form-control" type="file" id="js-form-input-image">
+          <div>表示領域</div>
+          <img id="js-form-output-image">
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <div class="mb-2">
+          <h2 class="mb-4 fw-bold">郵便番号入力すると住所自動表示</h2>
+          <input type="text" name="zip11" class="form-control" id="js-form-address" placeholder="郵便番号" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+        </div>
+        <div class="mb-2">
+          <input type="text" name="addr11" class="form-control" id="js-form-prefectures" placeholder="住所">
+        </div>
+      </div>
+
+
+
+
+    </form>
+  </section>
+</div><!-- end pageWrap -->
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<script src="common.js"></script>
+</body>
+</html>
